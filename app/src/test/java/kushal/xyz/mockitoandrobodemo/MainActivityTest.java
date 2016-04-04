@@ -113,6 +113,7 @@ public class MainActivityTest {
         MainActivity mainActivity = Robolectric.setupActivity(MainActivity.class);
         TextView textView = (TextView) mainActivity.findViewById(R.id.textView);
         MenuItem item = new MenuItem() {
+
             @Override
             public int getItemId() {
                 return R.id.action_settings;
@@ -525,7 +526,7 @@ public class MainActivityTest {
             }
 
             @Override
-            public MenuItem setOnActionExpandListener(OnActionExpandListener listener) {
+            public MenuItem setOnActionExpandListener(MenuItem.OnActionExpandListener listener) {
                 return null;
             }
         };

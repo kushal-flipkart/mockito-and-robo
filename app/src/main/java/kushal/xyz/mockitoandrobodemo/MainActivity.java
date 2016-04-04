@@ -103,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("Settings clicked");
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 }
